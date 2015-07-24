@@ -10,4 +10,10 @@
 #define GGGlobal_h
 
 
+
+#define kBarAlpha 0.6
+
+
+
+
 #endif /* GGGlobal_h */

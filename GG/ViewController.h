@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GGRootController.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : GGRootController
 
 @end
 

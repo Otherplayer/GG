@@ -15,6 +15,11 @@
 		6354299A1B623CE300707D87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635429981B623CE300707D87 /* LaunchScreen.storyboard */; };
 		635429A51B623CE300707D87 /* GGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 635429A41B623CE300707D87 /* GGTests.m */; };
 		635429B01B623CE300707D87 /* GGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 635429AF1B623CE300707D87 /* GGUITests.m */; };
+		635429BF1B62412200707D87 /* BaseTableViewProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 635429BE1B62412200707D87 /* BaseTableViewProtocol.m */; };
+		635429C21B62420F00707D87 /* GGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635429C11B62420F00707D87 /* GGNavigationController.m */; };
+		63F3DB861B624C1C00E2875C /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F3DB851B624C1C00E2875C /* UINavigationBar+Awesome.m */; };
+		63F3DB8C1B629B7800E2875C /* GGRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F3DB8B1B629B7800E2875C /* GGRootController.m */; };
+		63F3DB8F1B62A42500E2875C /* GGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F3DB8E1B62A42500E2875C /* GGTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,18 @@
 		635429AB1B623CE300707D87 /* GGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		635429AF1B623CE300707D87 /* GGUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GGUITests.m; sourceTree = "<group>"; };
 		635429B11B623CE300707D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635429BD1B62412200707D87 /* BaseTableViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewProtocol.h; sourceTree = "<group>"; };
+		635429BE1B62412200707D87 /* BaseTableViewProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewProtocol.m; sourceTree = "<group>"; };
+		635429C01B62420F00707D87 /* GGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGNavigationController.h; sourceTree = "<group>"; };
+		635429C11B62420F00707D87 /* GGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGNavigationController.m; sourceTree = "<group>"; };
+		63F3DB841B624C1C00E2875C /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		63F3DB851B624C1C00E2875C /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		63F3DB8A1B629B7800E2875C /* GGRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGRootController.h; sourceTree = "<group>"; };
+		63F3DB8B1B629B7800E2875C /* GGRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGRootController.m; sourceTree = "<group>"; };
+		63F3DB8D1B62A42500E2875C /* GGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGTabBarController.h; sourceTree = "<group>"; };
+		63F3DB8E1B62A42500E2875C /* GGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGTabBarController.m; sourceTree = "<group>"; };
+		63F3DB901B62AA7200E2875C /* GGGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GGGlobal.h; sourceTree = "<group>"; };
+		63F3DB911B62AAB800E2875C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +118,9 @@
 		635429891B623CE300707D87 /* GG */ = {
 			isa = PBXGroup;
 			children = (
+				63F3DB891B629B5E00E2875C /* RootController */,
+				63F3DB871B62503500E2875C /* TableViewProtocol */,
+				63F3DB901B62AA7200E2875C /* GGGlobal.h */,
 				6354298D1B623CE300707D87 /* AppDelegate.h */,
 				6354298E1B623CE300707D87 /* AppDelegate.m */,
 				635429901B623CE300707D87 /* ViewController.h */,
@@ -110,6 +130,7 @@
 				635429981B623CE300707D87 /* LaunchScreen.storyboard */,
 				6354299B1B623CE300707D87 /* Info.plist */,
 				6354298A1B623CE300707D87 /* Supporting Files */,
+				63F3DB911B62AAB800E2875C /* PrefixHeader.pch */,
 			);
 			path = GG;
 			sourceTree = "<group>";
@@ -117,6 +138,8 @@
 		6354298A1B623CE300707D87 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				63F3DB841B624C1C00E2875C /* UINavigationBar+Awesome.h */,
+				63F3DB851B624C1C00E2875C /* UINavigationBar+Awesome.m */,
 				6354298B1B623CE300707D87 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +161,28 @@
 				635429B11B623CE300707D87 /* Info.plist */,
 			);
 			path = GGUITests;
+			sourceTree = "<group>";
+		};
+		63F3DB871B62503500E2875C /* TableViewProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				635429BD1B62412200707D87 /* BaseTableViewProtocol.h */,
+				635429BE1B62412200707D87 /* BaseTableViewProtocol.m */,
+			);
+			name = TableViewProtocol;
+			sourceTree = "<group>";
+		};
+		63F3DB891B629B5E00E2875C /* RootController */ = {
+			isa = PBXGroup;
+			children = (
+				63F3DB8A1B629B7800E2875C /* GGRootController.h */,
+				63F3DB8B1B629B7800E2875C /* GGRootController.m */,
+				635429C01B62420F00707D87 /* GGNavigationController.h */,
+				635429C11B62420F00707D87 /* GGNavigationController.m */,
+				63F3DB8D1B62A42500E2875C /* GGTabBarController.h */,
+				63F3DB8E1B62A42500E2875C /* GGTabBarController.m */,
+			);
+			name = RootController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F3DB8C1B629B7800E2875C /* GGRootController.m in Sources */,
 				635429921B623CE300707D87 /* ViewController.m in Sources */,
+				63F3DB861B624C1C00E2875C /* UINavigationBar+Awesome.m in Sources */,
+				635429C21B62420F00707D87 /* GGNavigationController.m in Sources */,
 				6354298F1B623CE300707D87 /* AppDelegate.m in Sources */,
+				63F3DB8F1B62A42500E2875C /* GGTabBarController.m in Sources */,
+				635429BF1B62412200707D87 /* BaseTableViewProtocol.m in Sources */,
 				6354298C1B623CE300707D87 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,7 +463,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/OTHERPLAYER/Desktop/GG/GG/PrefixHeader.pch;
 				INFOPLIST_FILE = GG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = otherplayer.GG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +478,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/OTHERPLAYER/Desktop/GG/GG/PrefixHeader.pch;
 				INFOPLIST_FILE = GG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = otherplayer.GG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +556,7 @@
 				635429B61B623CE300707D87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		635429B71B623CE300707D87 /* Build configuration list for PBXNativeTarget "GGTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +565,7 @@
 				635429B91B623CE300707D87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		635429BA1B623CE300707D87 /* Build configuration list for PBXNativeTarget "GGUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +574,7 @@
 				635429BC1B623CE300707D87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

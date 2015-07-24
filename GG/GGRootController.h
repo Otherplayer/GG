@@ -10,4 +10,6 @@
 
 @interface GGRootController : UIViewController
 
+- (void)showTabBar:(BOOL)flag;
+
 @end

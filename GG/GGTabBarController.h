@@ -10,4 +10,8 @@
 
 @interface GGTabBarController : UITabBarController
 
+
+- (void)showTabBar:(BOOL)flag;
+
+
 @end
