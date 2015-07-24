@@ -10,4 +10,7 @@
 
 @interface GGNavigationController : UINavigationController
 
+- (void)showNavigationBar:(BOOL)flag;
+- (void)showNavigationBar:(BOOL)flag animation:(BOOL)animated;
+
 @end

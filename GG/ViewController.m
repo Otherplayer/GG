@@ -77,6 +77,7 @@ static NSString * const Identifier = @"PhotoCell";
 - (void)selectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"%ld",indexPath.row);
     [self showTabBar:indexPath.row % 2];
+    [self showNavigationBar:indexPath.row %2];
 }
 - (CGFloat)cellHeightAtIndexPath:(NSIndexPath *)indexPath{
     return 100;

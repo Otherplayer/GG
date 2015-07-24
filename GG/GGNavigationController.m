@@ -18,6 +18,29 @@
 }
 
 
+#pragma mark - public
+
+- (void)showNavigationBar:(BOOL)flag{
+    [self showNavigationBar:flag animation:YES];
+}
+
+- (void)showNavigationBar:(BOOL)flag animation:(BOOL)animated{
+    
+    CGFloat y = -64;
+    if (flag) {y = 0;}
+    
+    CGRect rect = CGRectMake(0, y, CGRectGetWidth(self.view.bounds), 64);
+    
+    if (animated) {
+        
+        [UIView animateWithDuration:0.25 animations:^{
+            [self.navigationBar setFrame:rect];
+        }];
+    }else{
+        
+        [self.navigationBar setFrame:rect];
+    }
+}
 
 
 

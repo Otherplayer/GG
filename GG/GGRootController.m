@@ -7,6 +7,7 @@
 //
 
 #import "GGRootController.h"
+#import "GGNavigationController.h"
 #import "GGTabBarController.h"
 @implementation GGRootController
 
@@ -21,6 +22,10 @@
 
 - (void)showTabBar:(BOOL)flag{
     [(GGTabBarController *)self.tabBarController showTabBar:flag];
+}
+
+- (void)showNavigationBar:(BOOL)flag{
+    [(GGNavigationController *)self.navigationController  showNavigationBar:flag];
 }
 
 
